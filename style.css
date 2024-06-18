@@ -39,6 +39,10 @@ header p {
     font-weight: 500;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header nav {
     display: flex;
     align-items: center;
