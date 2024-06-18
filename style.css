@@ -3,25 +3,34 @@
 /* Styles globaux */
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0 auto; /* Centrer la page horizontalement */
+    margin: 0 auto;
+    /* Centrer la page horizontalement */
     padding: 0;
-    box-sizing: border-box; /* Assure que padding et border sont inclus dans la width et height */
-    width: 100%; /* Assure que le body prend toute la largeur */
-    background-image: url('https://s3-alpha-sig.figma.com/img/804c/ffbe/d625d4d48c49722032366f059156473a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DmYMJj7SRuWFPEaFysj-~2zP7MhB-5K-8YeWLy~CgOaSBykekOFFnW993F01sAKNXQ0aSKzoCyt14sMLK9uwXypPDfWNn6eqVhGJLAF-wadGXI4ni95xkQ-trLEOkwYG0fuST~FYrQGGxCL14vucAZpybsQqv1O8gBwItgvGaz7Fc1E3a0sUsrBcEpzxXvYnzKNa71PNyfnazUec0mNVpEgBvNppmhQvULA8ibUEz9obRbymOJTQUvVD545psZE4yDZSxotA5YekLOqaNfEAJGO9TM7ZkppipL7LHLveZjoZXm9UHtttj6kmmYFOYlnvje6hQYUWwxQn1EP-MCKN5A'); /* Chemin vers l'image */
-    background-size: cover; /* Couvre tout le fond */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    box-sizing: border-box;
+    /* Assure que padding et border sont inclus dans la width et height */
+    width: 100%;
+    /* Assure que le body prend toute la largeur */
+    background-image: url('https://s3-alpha-sig.figma.com/img/804c/ffbe/d625d4d48c49722032366f059156473a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DmYMJj7SRuWFPEaFysj-~2zP7MhB-5K-8YeWLy~CgOaSBykekOFFnW993F01sAKNXQ0aSKzoCyt14sMLK9uwXypPDfWNn6eqVhGJLAF-wadGXI4ni95xkQ-trLEOkwYG0fuST~FYrQGGxCL14vucAZpybsQqv1O8gBwItgvGaz7Fc1E3a0sUsrBcEpzxXvYnzKNa71PNyfnazUec0mNVpEgBvNppmhQvULA8ibUEz9obRbymOJTQUvVD545psZE4yDZSxotA5YekLOqaNfEAJGO9TM7ZkppipL7LHLveZjoZXm9UHtttj6kmmYFOYlnvje6hQYUWwxQn1EP-MCKN5A');
+    /* Chemin vers l'image */
+    background-size: cover;
+    /* Couvre tout le fond */
+    background-position: center;
+    /* Centre l'image */
+    background-repeat: no-repeat;
+    /* Ne pas répéter l'image */
 }
 
 /* Styles pour le header */
 header {
     height: 130px;
-    background: #FFFFF5; /* Couleur de fond légèrement jaunâtre */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.25); /* Bordure grise en bas */
+    background: #FFFFF5;
+    /* Couleur de fond légèrement jaunâtre */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    /* Bordure grise en bas */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 20px; 
+    padding: 0 20px 0 20px;
     position: relative;
 }
 
@@ -33,15 +42,18 @@ header p {
 header nav {
     display: flex;
     align-items: center;
-    flex-grow: 1; /* Permet à la navigation de prendre tout l'espace disponible */
+    flex-grow: 1;
+    /* Permet à la navigation de prendre tout l'espace disponible */
     justify-content: flex-end;
     margin-right: 20px;
 }
 
 header nav ul {
     display: flex;
-    list-style: none; /* Supprime les puces des listes */
-    gap: 40px; /* Espace entre les éléments de la liste */
+    list-style: none;
+    /* Supprime les puces des listes */
+    gap: 40px;
+    /* Espace entre les éléments de la liste */
     padding: 0;
     margin: 0;
 }
@@ -53,8 +65,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-    text-decoration: none; /* Supprime la décoration des liens */
-    color: #333; /* Couleur du texte */
+    text-decoration: none;
+    /* Supprime la décoration des liens */
+    color: #333;
+    /* Couleur du texte */
 }
 
 .search {
@@ -87,41 +101,64 @@ header nav ul li a {
 }
 
 header .profile {
-    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
-    align-items: center; /* Aligne les éléments verticalement au centre */
-    position: relative; /* Position relative pour le dropdown */
+    display: flex;
+    /* Utilise flexbox pour aligner les éléments horizontalement */
+    align-items: center;
+    /* Aligne les éléments verticalement au centre */
+    position: relative;
+    /* Position relative pour le dropdown */
 }
 
 header .profile-img1 {
-    width:  40px; /* Largeur de l'image de profil */
-    height: 40px; /* Hauteur de l'image de profil */
-    border-radius: 50%; /* Rend l'image de profil ronde */
-    cursor: pointer; /* Change le curseur en pointeur lorsqu'on passe sur l'image */
-    margin-left: 10px; /* Ajoute de l'espace à gauche de l'image de profil */
+    width: 40px;
+    /* Largeur de l'image de profil */
+    height: 40px;
+    /* Hauteur de l'image de profil */
+    border-radius: 50%;
+    /* Rend l'image de profil ronde */
+    cursor: pointer;
+    /* Change le curseur en pointeur lorsqu'on passe sur l'image */
+    margin-left: 10px;
+    /* Ajoute de l'espace à gauche de l'image de profil */
 }
 
 header .profile-img2 {
-    width:  24px; /* Largeur de l'image de profil */
-    height: 24px; /* Hauteur de l'image de profil */
-    border-radius: 50%; /* Rend l'image de profil ronde */
-    cursor: pointer; /* Change le curseur en pointeur lorsqu'on passe sur l'image */
-    margin-left: 10px; /* Ajoute de l'espace à gauche de l'image de profil */
+    width: 24px;
+    /* Largeur de l'image de profil */
+    height: 24px;
+    /* Hauteur de l'image de profil */
+    border-radius: 50%;
+    /* Rend l'image de profil ronde */
+    cursor: pointer;
+    /* Change le curseur en pointeur lorsqu'on passe sur l'image */
+    margin-left: 10px;
+    /* Ajoute de l'espace à gauche de l'image de profil */
 }
 
 header .dropdown {
-    display: none; /* Cache le menu déroulant par défaut */
-    position: absolute; /* Positionne le menu déroulant par rapport à l'image de profil */
-    top: 60px; /* Décale le menu déroulant vers le bas */
-    right: 0; /* Aligne le menu déroulant à droite */
-    background-color: white; /* Fond blanc pour le menu déroulant */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour donner de la profondeur */
-    border-radius: 5px; /* Arrondit les coins du menu déroulant */
-    overflow: hidden; /* Cache les débordements éventuels */
-    z-index: 10; /* S'assure que le dropdown est au-dessus des autres éléments */
+    display: none;
+    /* Cache le menu déroulant par défaut */
+    position: absolute;
+    /* Positionne le menu déroulant par rapport à l'image de profil */
+    top: 60px;
+    /* Décale le menu déroulant vers le bas */
+    right: 0;
+    /* Aligne le menu déroulant à droite */
+    background-color: white;
+    /* Fond blanc pour le menu déroulant */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre légère pour donner de la profondeur */
+    border-radius: 5px;
+    /* Arrondit les coins du menu déroulant */
+    overflow: hidden;
+    /* Cache les débordements éventuels */
+    z-index: 10;
+    /* S'assure que le dropdown est au-dessus des autres éléments */
 }
 
 header .profile:hover .dropdown {
-    display: block; /* Affiche le menu déroulant lorsqu'on survole l'image de profil */
+    display: block;
+    /* Affiche le menu déroulant lorsqu'on survole l'image de profil */
 }
 
 /* Styles pour la section Hero */
@@ -130,12 +167,13 @@ header .profile:hover .dropdown {
     align-items: center;
     justify-content: flex-start;
     padding: 25px;
-   }
-
-.hero_heading_up{
-    display: flex;
-   
 }
+
+.hero_heading_up {
+    display: flex;
+
+}
+
 .hero-heading {
     display: flex;
     flex-direction: column;
@@ -149,7 +187,8 @@ header .profile:hover .dropdown {
 
 .hero-heading h1 {
     font-size: 64px;
-    color: #709FA9; /* Couleur du texte */
+    color: #709FA9;
+    /* Couleur du texte */
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -178,7 +217,7 @@ header .profile:hover .dropdown {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    }
+}
 
 .hero-image img {
     display: flex;
@@ -189,9 +228,9 @@ header .profile:hover .dropdown {
 }
 
 .hero-button {
-    position:relative;
+    position: relative;
     bottom: 50px;
-    left:330px;
+    left: 330px;
     background-color: #0DAED2;
     color: white;
     border: none;
@@ -214,7 +253,7 @@ header .profile:hover .dropdown {
     letter-spacing: 0.3em;
     text-align: left;
     margin-top: 70px;
-    
+
 }
 
 .hero-text p {
@@ -224,7 +263,8 @@ header .profile:hover .dropdown {
 }
 
 /* Styles pour les sections services et reconditionnés */
-.services, .reconditionnes {
+.services,
+.reconditionnes {
     margin: 40px 15px 0 15px;
 }
 
@@ -234,8 +274,9 @@ header .profile:hover .dropdown {
     margin-bottom: 10px;
 }
 
-.services h2, .reconditionnes h2 {
-    font-family: 'Inter', sans-serif,;
+.services h2,
+.reconditionnes h2 {
+    font-family: 'Inter', sans-serif;
     color: #709FA9;
     font-size: 48px;
     font-weight: 700;
@@ -246,7 +287,7 @@ header .profile:hover .dropdown {
     border-radius: 3px;
     margin: 0 auto;
     text-align: left;
-    }
+}
 
 .services h2 {
     text-align: left;
@@ -263,33 +304,37 @@ header .profile:hover .dropdown {
     display: none;
 }
 
-.service-list, .product-list {
+.service-list,
+.product-list {
     display: flex;
     justify-content: left;
     gap: 20px;
     font-weight: 600;
-    font-size:15px;
-    }
+    font-size: 15px;
+}
 
-.service-item, .product-item {
+.service-item,
+.product-item {
     text-align: left;
     margin: 0 10px 0 10px;
 }
 
-.service-item p, h4 {
-text-align: left;
+.service-item p,
+h4 {
+    text-align: left;
 }
 
 .service-item p {
     font-size: 13px;
-    color: #828282;        
+    color: #828282;
 }
 
 .service-item h4 {
     font-size: 16px;
 }
 
-.service-item img, .product-item img {
+.service-item img,
+.product-item img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -299,8 +344,8 @@ text-align: left;
     width: 240px;
     height: auto;
     border-width: 4px;
-    border-style: solid; 
-    
+    border-style: solid;
+
 }
 
 /* Styles pour la section qualité */
@@ -319,7 +364,7 @@ text-align: left;
     font-family: 'Julius Sans One';
     font-size: 24px;
     margin-bottom: 20px;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
 .quality-list {
@@ -344,9 +389,9 @@ footer {
     text-align: center;
     justify-content: flex-start;
     align-items: center;
-    
-    
-   } 
+
+
+}
 
 .footer-logo {
     width: 120px;
@@ -460,7 +505,9 @@ footer {
     font-weight: bold;
 }
 
-.demand-content select, .demand-content input, .demand-content button {
+.demand-content select,
+.demand-content input,
+.demand-content button {
     width: 200px;
     padding: 5px;
     margin: 5px 0;
@@ -491,12 +538,14 @@ footer {
     gap: 20px;
 }
 
-.diy-video, .diy-description {
+.diy-video,
+.diy-description {
     width: 300px;
     text-align: left;
 }
 
-.diy-video h3, .diy-description h3 {
+.diy-video h3,
+.diy-description h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -518,26 +567,31 @@ footer {
     background-color: #0056b3;
 }
 
-.service-image, .product-image {
-    transition: transform 0.3s ease-in-out; /* Transition pour une animation fluide */
+.service-image,
+.product-image {
+    transition: transform 0.3s ease-in-out;
+    /* Transition pour une animation fluide */
 }
 
 @media screen and (max-width: 600px) {
- 
+
     header nav {
         display: none;
     }
+
     header .search {
         display: none;
     }
-    
+
     a {
-    color: #000;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 60px */   
+        color: #000;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        /* 60px */
     }
+
     .hero {
         flex-direction: column;
         align-items: center;
@@ -545,7 +599,7 @@ footer {
         padding: 10px;
     }
 
-   .hero_heading_up {
+    .hero_heading_up {
         display: flex;
         margin-bottom: 0;
         max-width: 95%;
@@ -561,7 +615,7 @@ footer {
     }
 
     .hero-content {
-        display : flex;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         max-width: 95%;
@@ -572,7 +626,7 @@ footer {
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        margin-left : 0;
+        margin-left: 0;
     }
 
     .hero-text {
@@ -583,19 +637,19 @@ footer {
         border: 0px solid #000;
         background: #FFF;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        
+
     }
 
     .hero-text p {
         font-size: 12px;
         margin: 0;
         border-radius: 3px;
-        
+
     }
 
     /* Styles pour les sections services et reconditionnés */
     .reconditionnes {
-        display : none;
+        display: none;
     }
 
     .services {
@@ -609,44 +663,48 @@ footer {
     }
 
     .services img {
-        display : none;
+        display: none;
     }
 
     .reconditionnes h2 {
-        display : none;
-        }
+        display: none;
+    }
 
     .reconditionnes h2 {
-        display : none;
+        display: none;
     }
 
-    .service-list, .product-list {
-        display : none;
-        }
-
-    .service-item, .product-item {
-        display : none;
+    .service-list,
+    .product-list {
+        display: none;
     }
 
-    .service-item p, h4 {
-        display : none;
+    .service-item,
+    .product-item {
+        display: none;
+    }
+
+    .service-item p,
+    h4 {
+        display: none;
     }
 
     .service-item p {
-        display : none;       
+        display: none;
     }
 
     .service-item h4 {
-        display : none;
+        display: none;
     }
 
-    .service-item img, .product-item img {
-        display : none;
+    .service-item img,
+    .product-item img {
+        display: none;
     }
 
     .product-item img {
-        display : none;
-        
+        display: none;
+
     }
 
     .services-button {
@@ -668,4 +726,4 @@ footer {
 
     }
 
-    }
+}
