@@ -370,7 +370,7 @@ h4 {
 .quality-list {
     display: flex;
     flex-direction: row;
-    justify-items: 20px;
+    justify-items: space-around;
 }
 
 .quality-content img {
