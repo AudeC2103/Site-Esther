@@ -1,0 +1,672 @@
+/* style.css */
+
+/* Styles globaux */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto; /* Centrer la page horizontalement */
+    padding: 0;
+    box-sizing: border-box; /* Assure que padding et border sont inclus dans la width et height */
+    width: 100%; /* Assure que le body prend toute la largeur */
+    background-image: url('https://s3-alpha-sig.figma.com/img/804c/ffbe/d625d4d48c49722032366f059156473a?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DmYMJj7SRuWFPEaFysj-~2zP7MhB-5K-8YeWLy~CgOaSBykekOFFnW993F01sAKNXQ0aSKzoCyt14sMLK9uwXypPDfWNn6eqVhGJLAF-wadGXI4ni95xkQ-trLEOkwYG0fuST~FYrQGGxCL14vucAZpybsQqv1O8gBwItgvGaz7Fc1E3a0sUsrBcEpzxXvYnzKNa71PNyfnazUec0mNVpEgBvNppmhQvULA8ibUEz9obRbymOJTQUvVD545psZE4yDZSxotA5YekLOqaNfEAJGO9TM7ZkppipL7LHLveZjoZXm9UHtttj6kmmYFOYlnvje6hQYUWwxQn1EP-MCKN5A'); /* Chemin vers l'image */
+    background-size: cover; /* Couvre tout le fond */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+/* Styles pour le header */
+header {
+    height: 130px;
+    background: #FFFFF5; /* Couleur de fond légèrement jaunâtre */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25); /* Bordure grise en bas */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px; 
+    position: relative;
+}
+
+header p {
+    color: #000;
+    font-weight: 500;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permet à la navigation de prendre tout l'espace disponible */
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none; /* Supprime les puces des listes */
+    gap: 40px; /* Espace entre les éléments de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+header nav ul li a {
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: #333; /* Couleur du texte */
+}
+
+.search {
+    display: flex;
+    width: 123px;
+    padding: 8px 4px 8px 12px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+}
+
+.search input[type="text"] {
+    display: flex;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-color: #FFFFF5;
+    border: 0;
+}
+
+.search-img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    order: -1;
+}
+
+header .profile {
+    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    position: relative; /* Position relative pour le dropdown */
+}
+
+header .profile-img1 {
+    width:  40px; /* Largeur de l'image de profil */
+    height: 40px; /* Hauteur de l'image de profil */
+    border-radius: 50%; /* Rend l'image de profil ronde */
+    cursor: pointer; /* Change le curseur en pointeur lorsqu'on passe sur l'image */
+    margin-left: 10px; /* Ajoute de l'espace à gauche de l'image de profil */
+}
+
+header .profile-img2 {
+    width:  24px; /* Largeur de l'image de profil */
+    height: 24px; /* Hauteur de l'image de profil */
+    border-radius: 50%; /* Rend l'image de profil ronde */
+    cursor: pointer; /* Change le curseur en pointeur lorsqu'on passe sur l'image */
+    margin-left: 10px; /* Ajoute de l'espace à gauche de l'image de profil */
+}
+
+header .dropdown {
+    display: none; /* Cache le menu déroulant par défaut */
+    position: absolute; /* Positionne le menu déroulant par rapport à l'image de profil */
+    top: 60px; /* Décale le menu déroulant vers le bas */
+    right: 0; /* Aligne le menu déroulant à droite */
+    background-color: white; /* Fond blanc pour le menu déroulant */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour donner de la profondeur */
+    border-radius: 5px; /* Arrondit les coins du menu déroulant */
+    overflow: hidden; /* Cache les débordements éventuels */
+    z-index: 10; /* S'assure que le dropdown est au-dessus des autres éléments */
+}
+
+header .profile:hover .dropdown {
+    display: block; /* Affiche le menu déroulant lorsqu'on survole l'image de profil */
+}
+
+/* Styles pour la section Hero */
+.hero {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 25px;
+   }
+
+.hero_heading_up{
+    display: flex;
+   
+}
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    box-shadow: 7px 7px 3px 0px #00000040;
+}
+
+.hero-heading h1 {
+    font-size: 64px;
+    color: #709FA9; /* Couleur du texte */
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    font-family: Inter;
+    letter-spacing: 0.3em;
+    text-align: left;
+    padding: 0px 130px 0 40px;
+
+}
+
+.hero-heading h2 {
+    font-size: 48px;
+    color: #709FA9;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: 0.3em;
+    text-align: right;
+    padding-right: 10%;
+    padding-left: 15%;
+    padding-bottom: 10px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+
+.hero-image img {
+    display: flex;
+    max-width: 450px;
+    border-radius: 5px;
+    margin-left: 10%;
+    box-shadow: 3px 3px 0px 0px #00000040;
+
+}
+
+.hero-button {
+    position:relative;
+    bottom: 50px;
+    left:330px;
+    background-color: #0DAED2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-text {
+    background-color: white;
+    padding: 35px 20px 20px 40px;
+    border-radius: 5px;
+    box-shadow: 13px 10px 6.5px 0px #00000040;
+    max-width: 30%;
+    color: #709FA9;
+    font-family: Inter;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-align: left;
+    margin-top: 70px;
+    
+}
+
+.hero-text p {
+    font-size: 13px;
+    color: #709FA9;
+    margin: 0;
+}
+
+/* Styles pour les sections services et reconditionnés */
+.services, .reconditionnes {
+    margin: 40px 15px 0 15px;
+}
+
+.services img {
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.services h2, .reconditionnes h2 {
+    font-family: 'Inter', sans-serif,;
+    color: #709FA9;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: 0.3em;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 3px;
+    margin: 0 auto;
+    text-align: left;
+    }
+
+.services h2 {
+    text-align: left;
+    width: 80%;
+    padding: 10px 10px 40px 10px;
+}
+
+.reconditionnes h2 {
+    text-align: right;
+    width: 75%;
+}
+
+.services-button {
+    display: none;
+}
+
+.service-list, .product-list {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    font-weight: 600;
+    font-size:15px;
+    }
+
+.service-item, .product-item {
+    text-align: left;
+    margin: 0 10px 0 10px;
+}
+
+.service-item p, h4 {
+text-align: left;
+}
+
+.service-item p {
+    font-size: 13px;
+    color: #828282;        
+}
+
+.service-item h4 {
+    font-size: 16px;
+}
+
+.service-item img, .product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    width: 240px;
+    height: auto;
+    border-width: 4px;
+    border-style: solid; 
+    
+}
+
+/* Styles pour la section qualité */
+.quality {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.quality-content {
+    display: flex;
+}
+
+.quality h2 {
+    font-family: 'Julius Sans One';
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 300;    
+}
+
+.quality-list {
+    display: flex;
+    flex-direction: row;
+    justify-items: 20px;
+}
+
+.quality-content img {
+    width: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styles pour le footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+   } 
+
+.footer-logo {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Styles pour la section services-hero */
+.services-hero {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services-hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+    letter-spacing: 0.3em;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    width: 300px;
+    text-align: center;
+}
+
+/* Styles pour la section repair-section */
+.repair-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.repair-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.repair-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.repair-content img {
+    width: 400px;
+}
+
+.repair-content p {
+    width: 300px;
+    text-align: left;
+}
+
+.repair-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.repair-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section demand-section */
+.demand-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.demand-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.demand-content img {
+    width: 300px;
+}
+
+.demand-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.demand-content label {
+    font-weight: bold;
+}
+
+.demand-content select, .demand-content input, .demand-content button {
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.demand-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.demand-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section diy-section */
+.diy-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.diy-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.diy-video, .diy-description {
+    width: 300px;
+    text-align: left;
+}
+
+.diy-video h3, .diy-description h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.diy-video img {
+    width: 100%;
+}
+
+.diy-description button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.diy-description button:hover {
+    background-color: #0056b3;
+}
+
+.service-image, .product-image {
+    transition: transform 0.3s ease-in-out; /* Transition pour une animation fluide */
+}
+
+@media screen and (max-width: 600px) {
+ 
+    header nav {
+        display: none;
+    }
+    header .search {
+        display: none;
+    }
+    
+    a {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 60px */   
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+   .hero_heading_up {
+        display: flex;
+        margin-bottom: 0;
+        max-width: 95%;
+    }
+
+    .hero-heading h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .hero-heading h2 {
+        font-size: 20px;
+    }
+
+    .hero-content {
+        display : flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .hero-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-left : 0;
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+        margin-top: 0px;
+        border: 0px solid #000;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+
+    .hero-text p {
+        font-size: 12px;
+        margin: 0;
+        border-radius: 3px;
+        
+    }
+
+    /* Styles pour les sections services et reconditionnés */
+    .reconditionnes {
+        display : none;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+    }
+
+    .services h2 {
+        display: none;
+    }
+
+    .services img {
+        display : none;
+    }
+
+    .reconditionnes h2 {
+        display : none;
+        }
+
+    .reconditionnes h2 {
+        display : none;
+    }
+
+    .service-list, .product-list {
+        display : none;
+        }
+
+    .service-item, .product-item {
+        display : none;
+    }
+
+    .service-item p, h4 {
+        display : none;
+    }
+
+    .service-item p {
+        display : none;       
+    }
+
+    .service-item h4 {
+        display : none;
+    }
+
+    .service-item img, .product-item img {
+        display : none;
+    }
+
+    .product-item img {
+        display : none;
+        
+    }
+
+    .services-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        color: white;
+        font-weight: 400;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 40%;
+        height: 40px;
+        color: #FFF;
+        line-height: 150%;
+
+    }
+
+    }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Déclare que ce document est en HTML5 -->
+<html lang="fr">
+<head>
+    <!-- Encodage des caractères en UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configuration de la zone de visualisation pour une mise en page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de style CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Préconnecter aux domaines de Google Fonts pour des performances accrues -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Lien vers la feuille de style FontAwesome pour les icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+    <!-- Titre de la page -->
+    <title>Services</title>
+</head>
+  <body>
+      <!-- En-tête du site -->
+    <header>
+      <div class="logo">
+          <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="produits.html">PRODUITS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="a-propos.html">À PROPOS</a></li>
+          </ul>
+      </nav>
+      <div class="search">
+          <input type="text" placeholder="Search"> <!-- Champ de recherche -->
+      </div>
+      <div class="profile">
+          <img src="assets/profile-image.jpg" alt="Profile" class="profile-img"> <!-- Image de profil -->
+          <div class="dropdown">
+              <!-- Contenu du menu déroulant -->
+          </div>
+      </div>
+  </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Section héroïque avec les services -->
+        <section class="services-hero">
+            <h1>NOS SERVICES,<br> et plus...</h1>
+            <div class="services-list">
+                <!-- Service de réparation -->
+                <div class="service-item">
+                    <h3>Réparation</h3>
+                    <img src="/assets/reparation.jpg" alt="Réparation">
+                    <p>Description of your service and what it offers.</p>
+                </div>
+                <!-- Service de recyclage -->
+                <div class="service-item">
+                    <h3>Recyclage</h3>
+                    <img src="/assets/recyclage.jpg" alt="Recyclage">
+                    <p>Description of your service and what it offers.</p>
+                </div>
+                <!-- Ateliers DIY -->
+                <div class="service-item">
+                    <h3>Ateliers DIY</h3>
+                    <img src="/assets/diy.jpg" alt="Ateliers DIY">
+                    <p>Description of your service and what it offers.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section des réparations -->
+        <section class="repair-section">
+            <h2>Réparations</h2>
+            <p>Subheading for description or instructions</p>
+            <div class="repair-content">
+                <!-- Image de réparation -->
+                <img src="/assets/repair.jpg" alt="Réparation">
+                <p>Body text for your article or post. Wipe all items have been known lorem to fade or fail if they're not sure</p>
+                <button>En savoir plus</button>
+            </div>
+        </section>
+        <!-- Section pour soumettre une demande -->
+        <section class="demand-section">
+            <h2>Votre demande</h2>
+            <div class="demand-content">
+                <!-- Image de carte -->
+                <img src="/assets/map.jpg" alt="Carte">
+                <!-- Formulaire de demande -->
+                <form>
+                    <label for="service">Service</label>
+                    <select id="service">
+                        <option value="reparation">Réparation</option>
+                        <option value="recyclage">Recyclage</option>
+                        <option value="diy">Ateliers DIY</option>
+                        <option value="reconditionne">Reconditionné</option>
+                    </select>
+                    <label for="price">Prix</label>
+                    <input type="text" id="price" value="$5 per month" readonly>
+                    <button type="submit">Demande</button>
+                </form>
+            </div>
+        </section>
+        <!-- Section des ateliers DIY -->
+        <section class="diy-section">
+            <h2>Ateliers DIY</h2>
+            <div class="diy-content">
+                <div class="diy-video">
+                    <h3>Communauté</h3>
+                    <a href="#"><img src="/assets/youtube.jpg" alt="YouTube"></a>
+                </div>
+                <div class="diy-description">
+                    <h3>Heading</h3>
+                    <p>Another subheading—maybe it’s related to the image on the left, or the button below</p>
+                    <button>Button</button>
+                </div>
+            </div>
+        </section>
+    </main>
+   <!-- Pied de page -->
+   <footer>
+    <div class="footer-content">
+        <!-- Logo du site dans le pied de page -->
+        <img src="assets/logo.png" alt="Logo" class="footer-logo">
+        
+        <!-- Icônes de réseaux sociaux -->
+        <div class="social-icons">
+            <img src="assets/facebook.png" alt="Facebook" class="social-icon">
+            <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+        </div>
+        <!-- Adresse -->
+        <div class="address"> <!-- Correction du nom de la classe -->
+            <p>Répar'Electro Bretagne</p>
+            <p>12 Rue des Ateliers</p>
+            <p>Zone Industrielle du Moulin</p>
+            <p>29000 Quimper</p>
+            <p>France</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Script JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
